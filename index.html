@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA Calculator - Vignan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async
+    src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>    
+    <canvas id="waveCanvas"></canvas>
+    <div class="toggle-container">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="toggle-label">
+            <span class="toggle-slider">
+                <span class="sun">🌞</span>
+                <span class="moon">🌙</span>
+            </span>
+        </label>
+    </div>
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+    <div class="center-wrapper">
+        <div class="container">
+            <div class="heading-box">
+                <div class="logo-container">
+                    <img src="https://i.ibb.co/0pd1YXFF/logo.png" alt="VFSTR Logo" class="logo">
+                </div>
+                <h2 class="heading-text">VFSTR SGPA Calculator</h2>
+            </div>         
+            <p class="sgpa-info">Enter course details to calculate your SGPA</p>
+            <p class="note">Note: The acceptable range for Credits is between 1 and 4 and the acceptable range for Grade Points is from 0.00 to 10.00.</p>     
+            <div id="courseContainer">
+                <div class="course">
+                    <input type="number" placeholder="Credits (C)" class="credits" min="1" max="4" required>
+                    <input type="number" placeholder="Grade Points (P)" class="grade" min="0" max="10" required>
+                    <button class="remove-btn" onclick="removeCourse(this)"><i class="fas fa-trash"></i></button>
+                </div>               
+            </div>
+
+            <div class="button-container">
+                <button class="add-btn" onclick="addCourse()" disabled>
+                    <i class="fas fa-plus"></i> Add Course
+                </button>
+                <button class="calculate-btn" onclick="calculateSGPA()" disabled>
+                    <i class="fas fa-calculator"></i> Calculate SGPA
+                </button>
+            </div>
+            <div class="result-box">
+                <h3>SGPA: <span id="result">-</span></h3>
+            </div>
+        </div>
+        
+        <div class="bottom-box">
+            <h3 class="formula-heading">SGPA Formula</h3>
+            <div class="formula-box">
+                <p>
+                    \[
+                    SGPA = \frac{\sum_{i=1}^{n} (C_i \times P_i)}{\sum_{i=1}^{n} C_i}
+                    \]
+                </p>
+                <p><small>Where \( C_i \) = Credits of the \( i^{th} \) course, <br> 
+                    \( P_i \) = Grade Points of the \( i^{th} \) course</small></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-space"></div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
+
+</body>
+</html>

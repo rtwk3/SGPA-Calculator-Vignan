@@ -1,0 +1,632 @@
+/* Theme Colors */
+:root {
+    --primary-color: #4a4ad2;
+    --secondary-color: #7a64e8;
+    --text-dark: #222;
+    --text-light: #f5f5ff;
+    --bg-light: radial-gradient(circle, #E0F8F0, #F8FFE5);
+    --bg-dark: radial-gradient(circle, #1a1a2e, #16213e);
+    --toggle-light: #f5f5ff;
+    --toggle-dark: #033244;
+
+    /* Box Colors */
+    --light-box: #F8FFE5; /* Light Mode Box */
+    --dark-box: #2c2c54;  /* Dark Mode Box */
+
+    /* Formula & Other Boxes */
+    --light-box-secondary: #06D6A0; /* Light Mode - Formula */
+    --dark-box-secondary: #7a64e8; /* Dark Mode - Formula */
+}
+
+/* 🌞 Light Mode (Default) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    background-color: #F8FFE5;
+    position: relative;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    height: 100vh; /* Change from 100vh to auto */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+.center-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack the container and bottom box vertically */
+    align-items: center;    /* Center them horizontally */
+    justify-content: center;
+    text-align: center;     /* Ensure text inside is centered */
+}
+/* 🌞 Light Mode - Main Box 
+.container {
+    background: var(--light-box);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    width: 90%;
+}
+
+/* Bottom Box 
+.bottom-box {
+    background: var(--light-box);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    max-width: 490px;
+}
+*/
+
+.formula-heading {
+    background-color: var(--light-box-secondary); /* Light mode color */
+    padding: 15px;  /* Add padding for spacing */
+    border-radius: 10px; /* Rounded edges */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* Space between logo and text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    color: white; /* Text color */
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Electrolize', sans-serif;
+}
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+.heading {
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    gap: 12px; 
+    font-weight: bold;
+    white-space: nowrap;
+    padding-top: 20px; /* Adjust spacing */
+}
+
+/* Logo container with rounded square */
+.logo-container {
+    background-color: #F2F1ED; /* Light grayish background */
+    padding: 5px; /* Space around logo */
+    border-radius: 8px; /* Curved edges */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px; /* Fixed width */
+    height: 45px; /* Fixed height */
+    flex-shrink: 0; /* Prevents resizing */
+}
+
+/* Logo itself */
+.logo {
+    width: 30px; /* Adjust logo size */
+    height: 30px;
+    border-radius: 5px; /* Slightly rounded logo */
+}
+
+/* Fix heading text alignment */
+.heading-text {
+    font-family: "Anta", sans-serif;
+    font-size: 30.5px;
+    margin: 0; /* Remove extra margin */
+    padding: 0; /* Ensure no unwanted spacing */
+    line-height: 1; /* Keep text height compact */
+}
+
+
+
+
+/* 🌞 Light Mode - Heading, Formula & Result Boxes */
+.heading-box {
+    background-color: var(--light-box-secondary); /* Light mode color */
+    padding: 15px;  /* Add padding for spacing */
+    border-radius: 10px; /* Rounded edges */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* Space between logo and text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    color: white; /* Text color */
+    font-size: 23.5px;
+    font-weight: bold;
+}
+
+
+.result-box {
+    background: var(--light-box-secondary); /* Light mode color */
+    padding: 15px;  /* Increase padding for better spacing */
+    border-radius: 8px;
+    color: white;
+    width: 93%;  /* Keep the width same */
+    height: 50px;
+    margin-top: 20px;  /* Space above */
+    margin-bottom: 20px; /* Space below */
+    font-weight: bold;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+  
+/* Formula Box */
+.formula-box {
+    background: var(--light-box-secondary);
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 🌙 Dark Mode - Background & Text */
+.dark-mode {
+    background: var(--bg-dark) !important;
+    color: var(--text-light) !important;
+}
+
+/* 🌙 Dark Mode - Main Box */
+.dark-mode .container {
+    background: var(--dark-box) !important;
+}
+.dark-mode .bottom-box {
+    background: var(--dark-box) !important;
+}
+
+/* 🌙 Dark Mode - Heading, Formula & Result Boxes */
+.dark-mode .heading-box{
+    background: var(--dark-box-secondary) !important;
+}
+.dark-mode .formula-heading{
+    background: var(--dark-box-secondary) !important;
+}
+.dark-mode .result-box {
+    background: var(--dark-box-secondary) !important;
+}
+.dark-mode .formula-box{
+    background: var(--dark-box-secondary) !important;
+}
+/* 🌙 Dark Mode - Text Adjustments */
+.dark-mode .sgpa-info {
+    color: var(--text-light) !important;
+}
+
+
+/* Add spacing below the last element to avoid content cutoff */
+.footer-space {
+    height: 100px;
+}
+
+
+/* Wave Animation Canvas */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Formula Box */
+
+/* Course Input Fields */
+.course {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px; 
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.course input {
+    width: 45%;
+    padding: 14px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Button Styling */
+button {
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s ease;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    gap: 10px; /* Adds space between buttons */
+    justify-content: center;
+}
+/* Buttons Take Equal Space */
+.add-btn {
+    background-color: var(--primary-color);
+    width: 46.6%;  /* Keep the width same */
+    height: 1.4cm;
+    margin-top: 10px;
+    margin-right: 0.5px;
+}
+
+.calculate-btn {
+    background-color: #28a745;
+    margin-bottom: 10px; 
+    margin-top: 10px;
+    height: 1.4cm;
+    width: 58%;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+}
+
+/* Dark Mode Toggle Button */
+/* Dark Mode Toggle - Fixed to Top Right */
+#theme-toggle {
+    position: fixed; /* Keeps it in place when scrolling */
+    top: 20px; /* Adjust top spacing */
+    right: 20px; /* Align to the right */
+    background: var(--toggle-light);
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    transition: background 0.3s ease;
+    z-index: 9999; /* Ensures it's always on top */
+}
+@media (max-width: 600px) {
+    #theme-toggle {
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+    }
+}
+/* When in dark mode */
+.dark-mode #theme-toggle {
+    background: var(--toggle-dark);
+}
+
+/* Styling for the paragraph */
+.sgpa-info {
+    font-size: 18.5px; /* Make it bold */
+    color: var(--text-dark); /* Default text color */
+    margin-top: 20px; /* Add space above */
+    margin-bottom: 20px;
+    font-family: 'Audiowide', sans-serif;
+}
+  
+
+
+/* Toggle Container */
+.toggle-container {
+    position: relative;
+}
+
+/* Hide Default Checkbox */
+#theme-toggle {
+    display: none;
+}
+
+/* Toggle Label */
+.toggle-label {
+    width: 80px;
+    height: 40px;
+    background: var(--toggle-light);
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Toggle Slider */
+.toggle-slider {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Sun & Moon Icons */
+.sun, .moon {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Moon is initially hidden */
+.moon {
+    opacity: 0;
+}
+
+/* Dark Mode Styles */
+#theme-toggle:checked + .toggle-label {
+    background: var(--toggle-dark);
+}
+
+/* Move Slider */
+#theme-toggle:checked + .toggle-label .toggle-slider {
+    transform: translateX(40px);
+    background: #FFF;
+}
+
+/* Sun & Moon Visibility */
+#theme-toggle:checked + .toggle-label .sun {
+    opacity: 0;
+}
+#theme-toggle:checked + .toggle-label .moon {
+    opacity: 1;
+}
+/* Bubble Container (Behind Everything) */
+.bubbles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10; /* Moves behind all content */
+    pointer-events: none; /* Prevents interaction */
+}
+
+/* Individual Bubbles */
+.bubble {
+    position: absolute;
+    bottom: -50px;
+    background: #90EE90;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: rise linear infinite;
+}
+
+/* Different Sizes & Speeds */
+.bubble:nth-child(1) { width: 40px; height: 40px; left: 5%; animation-duration: 6s; }
+.bubble:nth-child(2) { width: 30px; height: 30px; left: 25%; animation-duration: 8s; }
+.bubble:nth-child(3) { width: 50px; height: 50px; left: 45%; animation-duration: 7s; }
+.bubble:nth-child(4) { width: 20px; height: 20px; left: 65%; animation-duration: 5s; }
+.bubble:nth-child(5) { width: 60px; height: 60px; left: 85%; animation-duration: 9s; }
+
+/* 🌙 Dark Mode Background */
+.dark-mode body {
+    background-color: #7A64E8 !important;
+}
+
+.dark-mode .bubble {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Bubble Animation */
+@keyframes rise {
+    0% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+/* Apply Font to Note */
+.note {
+    font-family: 'Iceland', sans-serif;
+    font-size: 19px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.footer-space {
+    height: 120px; /* Increase height to allow scrolling */
+    width: 100%;
+}/* Ensure Confetti Appears on Full Screen */
+.confetti, .emoji {
+    position: fixed !important; /* Forces confetti outside any container */
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    opacity: 0.9;
+    border-radius: 50%;
+    z-index: 9999; /* Ensure it stays on top */
+}
+
+/* Prevent Confetti from Being Clipped */
+body, html {
+    overflow-x: hidden; /* Prevent side scrolling */
+}
+
+/* Confetti Rain */
+@keyframes confettiFall {
+    0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+/* Ensure Emojis Don't Get Stuck */
+.emoji {
+    position: fixed !important; /* Ensures emojis are not in footer */
+    font-size: 30px;
+    animation: fall linear infinite;
+    z-index: 9999;
+}
+/* Sad Emoji Animation */
+@keyframes fall {
+    0% { transform: translateY(-10px); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; } /* Ensures fade-out */
+}
+
+/* Optional: You can add a fade-out effect to remove the animation smoothly */
+.fade-out {
+    animation: fadeOut 2s forwards;
+}
+
+/* Fade-out effect to gradually remove the animation */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* Motivational Pop-up */
+.motivation-popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    z-index: 9999;
+}
+
+/* Fade out effect */
+.fade-out {
+    opacity: 0;
+}
+form {
+    margin: 20px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:enabled {
+    color: white;
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+.container, .bottom-box {
+    background: var(--light-box);
+    width: 90%; /* Adjust as needed */
+    max-width: 500px; /* Optional: Set a maximum width */
+    margin: 20px auto; /* Center the boxes */
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box; /* Important: Include padding and border in width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for smaller screens (example: mobile) */
+@media (max-width: 768px) {
+    .container, .bottom-box {
+        width: 95%; /* Adjust for smaller screens */
+        padding: 15px; /* Adjust padding */
+        margin: 15px auto; /* Adjust margin */
+    }
+
+    /* If the formula box is too wide on mobile */
+    .formula-box {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .heading-box {
+        font-size: 1.5em; /* Example: Scale font size */
+    }
+    .result-box {
+        font-size: 1.2em;
+    }
+    .sgpa-info{
+        font-size: 17.5px;
+    } 
+    .note {
+        font-size: 17.5px;
+    }
+    .course input {
+        width: 45%;
+        padding: 10px;
+        font-size: 16px;
+    }
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Further adjustments for even smaller screens */
+@media (max-width: 480px) {
+    .container, .bottom-box {
+        width: 98%; /* Go even closer to full width */
+        padding: 10px;
+        margin: 10px auto;
+    }
+    .course input {
+        width: 45%;
+        padding: 8px;
+        font-size: 14px;
+    }
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
