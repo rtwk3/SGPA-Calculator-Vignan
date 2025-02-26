@@ -2,13 +2,17 @@
 
 This is a simple web-based SGPA (Semester Grade Point Average) calculator designed for Vignan University students. It allows users to input their course details (credits and grade points) and calculates their SGPA based on the formula:
 
-\[
+# SGPA Calculation
+
+The SGPA (Semester Grade Point Average) is calculated using the formula:
+
+$$
 SGPA = \frac{\sum_{i=1}^{n} (C_i \times P_i)}{\sum_{i=1}^{n} C_i}
-\]
+$$
 
 Where:
-- \( C_i \) = Credits of the \( i^{th} \) course
-- \( P_i \) = Grade Points of the \( i^{th} \) course
+- \( C_i \) = Credits for the \( i^{th} \) course
+- \( P_i \) = Grade points for the \( i^{th} \) course
 
 The calculator also provides the option to toggle between light and dark themes.
 
@@ -18,14 +22,6 @@ The calculator also provides the option to toggle between light and dark themes.
 - Calculates SGPA based on entered data.
 - Light and dark mode toggle for better accessibility.
 - Responsive design for better user experience.
-
-## Installation
-
-1. Clone this repository to your local machine:
-    ```bash
-    git clone https://github.com/your-username/sgpa-calculator.git
-    ```
-2. Open the `index.html` file in a web browser to start using the SGPA Calculator.
 
 ## Usage
 
