@@ -267,10 +267,10 @@ function calculateSGPA() {
         showMotivationMessage("🎆 Incredible! You did amazing! 🌟");
     } else if (sgpa >= 7 && sgpa < 9) {
         startConfetti();
-        showMotivationMessage("✨ Great Work! Keep it up! 👍");
+        showMotivationMessage("✨ Great Work! Keep it up! 👍🏻");
     } else {
         startSadAnimation();
-        showMotivationMessage("Success is not final 🎯,  failure is not fatal;🏋it is the courage to continue that counts. 💯🫵🏻");
+        showMotivationMessage("Success is not final 🎯,  failure is not fatal;🏋🏻it is the courage to continue that counts. 💯🫵🏻");
     }
 }
 
@@ -283,7 +283,7 @@ function startSadAnimation() {
     for (let i = 0; i < 30; i++) {
         const emoji = document.createElement("div");
         emoji.classList.add("emoji");
-        emoji.innerText = ["😐", "🌟", "👏", "💪"][Math.floor(Math.random() * 4)];
+        emoji.innerText = ["👊🏻", "👏🏻", "🤞🏻", "💪🏻"][Math.floor(Math.random() * 4)];
         emoji.style.left = `${Math.random() * 100}vw`;
         emoji.style.animation = `fall ${Math.random() * 3 + 2}s linear`;
 
