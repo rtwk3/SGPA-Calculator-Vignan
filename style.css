@@ -594,11 +594,11 @@ button:enabled {
         font-size: 18px;
     }
     .heading-text span:first-child {
-    font-size: 24px;
+    font-size: 30px;
     }
     
     .heading-text span:last-child {
-        font-size: 19px;
+        font-size: 24px;
     }
     .result-box {
         font-size: 19px;
