@@ -605,14 +605,14 @@ button:enabled {
         font-size: 24px;
     }
     .logo-container {
-    width: 40px; /* Fixed width */
-    height: 40px; /* Fixed height */
+    width: 38px; /* Fixed width */
+    height: 38px; /* Fixed height */
     }
     
     /* Logo itself */
     .logo {
-        width: 30px; /* Adjust logo size */
-        height: 30px;
+        width: 32px; /* Adjust logo size */
+        height: 32px;
     }
     .result-box {
         font-size: 1.2em;
