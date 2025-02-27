@@ -585,27 +585,21 @@ button:enabled {
 /* Media query for smaller screens (example: mobile) */
 @media (max-width: 768px) {
     .container, .bottom-box {
-        width: 95%; /* Adjust for smaller screens */
-        padding: 15px; /* Adjust padding */
-        margin: 15px auto; /* Adjust margin */
+        width: 95%;
+        padding: 15px;
+        margin: 15px auto;
     }
-
-    /* If the formula box is too wide on mobile */
     .formula-box {
-        font-size: 18px; /* Reduce font size */
+        font-size: 18px;
     }
-
     .heading-box {
-        font-size: 1.5em; /* Example: Scale font size */
+        font-size: 22px;
     }
     .result-box {
-        font-size: 1.2em;
+        font-size: 19px;
     }
-    .sgpa-info{
-        font-size: 17.5px;
-    } 
-    .note {
-        font-size: 17.5px;
+    .sgpa-info, .note {
+        font-size: 1.1rem;
     }
     .course input {
         width: 45%;
@@ -618,20 +612,38 @@ button:enabled {
     }
 }
 
-/* Further adjustments for even smaller screens */
 @media (max-width: 480px) {
     .container, .bottom-box {
-        width: 98%; /* Go even closer to full width */
-        padding: 10px;
-        margin: 10px auto;
+        width: 98%;
+        padding: 8px;
+        margin: 8px auto;
+    }
+    .heading-box {
+        font-size: 20px;
+    }
+    .result-box {
+        font-size: 17px;
+    }
+    .sgpa-info, .note {
+        font-size: 1rem;
+    }
+    .course {
+        flex-direction: column;
     }
     .course input {
-        width: 45%;
+        width: 95%;
         padding: 8px;
         font-size: 14px;
+        margin-bottom: 5px;
     }
     button {
         padding: 10px;
         font-size: 14px;
+    }
+    .button-container {
+        flex-direction: column;
+    }
+    .add-btn, .calculate-btn {
+        width: 95%;
     }
 }
