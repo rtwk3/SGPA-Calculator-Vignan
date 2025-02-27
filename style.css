@@ -583,33 +583,55 @@ button:enabled {
 }
 
 /* Media query for smaller screens (example: mobile) */
-/* Adjust layout for smaller screens */
-
 @media (max-width: 768px) {
-    .container {
-      padding: 15px;
-    }
-    .form-section {
-      display: block;
-    }
-    .input-field {
-      width: 100%;
-    }
-    .result-box {
-      margin-top: 20px;
-      padding: 15px;
-      font-size: 22px;
-    }
-  }
-  @media (max-width: 480px) {
-    .container {
-      padding: 10px;
-    }
-    .header {
-      font-size: 20px;
-    }
-    .input-field {
-      font-size: 14px;
-    }
+    .container, .bottom-box {
+        width: 95%; /* Adjust for smaller screens */
+        padding: 15px; /* Adjust padding */
+        margin: 15px auto; /* Adjust margin */
+    }
 
-  }
+    /* If the formula box is too wide on mobile */
+    .formula-box {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .heading-box {
+        font-size: 1.5em; /* Example: Scale font size */
+    }
+    .result-box {
+        font-size: 1.2em;
+    }
+    .sgpa-info{
+        font-size: 17.5px;
+    } 
+    .note {
+        font-size: 17.5px;
+    }
+    .course input {
+        width: 45%;
+        padding: 10px;
+        font-size: 16px;
+    }
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Further adjustments for even smaller screens */
+@media (max-width: 480px) {
+    .container, .bottom-box {
+        width: 98%; /* Go even closer to full width */
+        padding: 10px;
+        margin: 10px auto;
+    }
+    .course input {
+        width: 45%;
+        padding: 8px;
+        font-size: 14px;
+    }
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
