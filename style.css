@@ -598,6 +598,13 @@ button:enabled {
     .heading-box {
         font-size: 1.5em; /* Example: Scale font size */
     }
+    .heading-text span:first-child {
+    font-size: 30px;
+    }
+    
+    .heading-text span:last-child {
+        font-size: 24px;
+    }
     .result-box {
         font-size: 1.2em;
     }
