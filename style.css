@@ -593,8 +593,12 @@ button:enabled {
     .formula-box {
         font-size: 18px;
     }
-    .heading-box {
-        font-size: 22px;
+    .heading-text span:first-child {
+    font-size: 24px;
+    }
+    
+    .heading-text span:last-child {
+        font-size: 19px;
     }
     .result-box {
         font-size: 19px;
