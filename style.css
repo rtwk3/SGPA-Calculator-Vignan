@@ -96,20 +96,20 @@ body {
 /* Logo container with rounded square */
 .logo-container {
     background-color: #F2F1ED; /* Light grayish background */
-    padding: 5px; /* Space around logo */
+    padding: 10.5px; /* Space around logo */
     border-radius: 8px; /* Curved edges */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px; /* Fixed width */
-    height: 45px; /* Fixed height */
+    width: 52px; /* Fixed width */
+    height: 52px; /* Fixed height */
     flex-shrink: 0; /* Prevents resizing */
 }
 
 /* Logo itself */
 .logo {
-    width: 30px; /* Adjust logo size */
-    height: 30px;
+    width: 40px; /* Adjust logo size */
+    height: 40px;
     border-radius: 5px; /* Slightly rounded logo */
 }
 
@@ -117,15 +117,17 @@ body {
 .heading-text {
     font-family: "Anta", sans-serif;
     font-size: 29px;
-    text-align: center;
-    text-justify: inter-word;
     margin: 0; /* Remove extra margin */
     padding: 0; /* Ensure no unwanted spacing */
-    line-height: 1; /* Keep text height compact */
+    line-height: 1.2; /* Keep text height compact */
+}
+.heading-text span:first-child {
+    font-size: 38px;
 }
 
-
-
+.heading-text span:last-child {
+    font-size: 33px;
+}
 
 /* 🌞 Light Mode - Heading, Formula & Result Boxes */
 .heading-box {
@@ -140,6 +142,7 @@ body {
     color: white; /* Text color */
     font-size: 23.5px;
     font-weight: bold;
+    text-align: left; /* Align text to the left */
 }
 
 
