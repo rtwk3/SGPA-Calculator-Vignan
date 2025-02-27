@@ -605,8 +605,8 @@ button:enabled {
         font-size: 24px;
     }
     .logo-container {
-    width: 45px; /* Fixed width */
-    height: 45px; /* Fixed height */
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
     }
     
     /* Logo itself */
