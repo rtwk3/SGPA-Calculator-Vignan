@@ -116,7 +116,9 @@ body {
 /* Fix heading text alignment */
 .heading-text {
     font-family: "Anta", sans-serif;
-    font-size: 30.5px;
+    font-size: 29px;
+    text-align: center;
+    text-justify: inter-word;
     margin: 0; /* Remove extra margin */
     padding: 0; /* Ensure no unwanted spacing */
     line-height: 1; /* Keep text height compact */
