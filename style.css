@@ -599,11 +599,20 @@ button:enabled {
         font-size: 1.5em; /* Example: Scale font size */
     }
     .heading-text span:first-child {
-    font-size: 26px;
+    font-size: 27px;
     }
-    
     .heading-text span:last-child {
         font-size: 24px;
+    }
+    .logo-container {
+    width: 45px; /* Fixed width */
+    height: 45px; /* Fixed height */
+    }
+    
+    /* Logo itself */
+    .logo {
+        width: 30px; /* Adjust logo size */
+        height: 30px;
     }
     .result-box {
         font-size: 1.2em;
