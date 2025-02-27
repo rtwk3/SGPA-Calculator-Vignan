@@ -599,7 +599,7 @@ button:enabled {
         font-size: 1.5em; /* Example: Scale font size */
     }
     .heading-text span:first-child {
-    font-size: 28px;
+    font-size: 26px;
     }
     
     .heading-text span:last-child {
