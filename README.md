@@ -30,8 +30,6 @@ The calculator also provides the option to toggle between light and dark themes.
 3. After entering all your courses, click "Calculate SGPA" to get your SGPA.
 4. The result will appear below the input fields.
 
-> **Note:** Courses with only 1 credit should not be included in the SGPA calculation as they are not factored into the final SGPA.
-
 ## Technologies Used
 - HTML5
 - CSS3
