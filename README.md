@@ -47,14 +47,24 @@ The calculator also supports light and dark themes for better usability.
 
 ---
 
-## 🤝 Collaborators
+## 👥 Collaborators
 
-This project was developed with the help of:
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/rtwk3" target="_blank">
+        <img src="https://github.com/rtwk3.png" width="80" height="80" style="border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.15);" alt="Rtwk3"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Hemanth251005" target="_blank">
+        <img src="https://github.com/Hemanth251005.png" width="80" height="80" style="border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.15);" alt="Hemanth"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
-- [Ruthwik](https://github.com/rtwk3) – Core Development, UI, SGPA Logic  
-- [Hemanth](https://github.com/Hemanth251005) – Theme Toggle, Input Validation
 
-> _Want to contribute? Fork this repo, push your code, and open a pull request._
 
 ---
 
