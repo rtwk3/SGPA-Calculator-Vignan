@@ -1,50 +1,71 @@
 # SGPA Calculator - Vignan University
 
-This is a simple web-based SGPA (Semester Grade Point Average) calculator designed for Vignan University students. It allows users to input their course details (credits and grade points) and calculates their SGPA based on the formula:
+This is a simple web-based SGPA (Semester Grade Point Average) calculator designed for Vignan University students. It allows users to input their course details (credits and grade points) and calculates their SGPA based on the standard academic formula.
 
-# SGPA Calculation
+## 📐 SGPA Calculation
 
-The SGPA (Semester Grade Point Average) is calculated using the formula:
+The SGPA is calculated using the formula:
 
 $$
 SGPA = \frac{\sum_{i=1}^{n} (C_i \times P_i)}{\sum_{i=1}^{n} C_i}
 $$
 
 Where:
-- \( C_i \) = Credits for the \( i^{th} \) course
+- \( C_i \) = Credits for the \( i^{th} \) course  
 - \( P_i \) = Grade points for the \( i^{th} \) course
 
-The calculator also provides the option to toggle between light and dark themes.
+The calculator also supports light and dark themes for better usability.
 
-## Features
+---
+
+## ✨ Features
+
 - Input credits and grade points for each course.
-- Add or remove courses dynamically.
-- Calculates SGPA based on entered data.
-- Light and dark mode toggle for better accessibility.
-- Responsive design for better user experience.
+- Dynamically add or remove courses.
+- One-click SGPA calculation.
+- Toggle between light and dark mode.
+- Fully responsive design.
 
-## Usage
+---
+
+## 🚀 Usage
 
 1. Enter the course credits and grade points in the input fields.
-2. Click "Add Course" to add more courses.
-3. After entering all your courses, click "Calculate SGPA" to get your SGPA.
-4. The result will appear below the input fields.
+2. Click **"Add Course"** to include more courses.
+3. Once done, click **"Calculate SGPA"**.
+4. Your SGPA will be displayed below.
 
-## Technologies Used
+---
+
+## 🛠️ Technologies Used
+
 - HTML5
 - CSS3
 - JavaScript
-- MathJax for rendering the SGPA formula
-- FontAwesome for icons
+- MathJax (for formula rendering)
+- FontAwesome (for UI icons)
 
-## Contributions
+---
 
-Contributions are welcome! Feel free to fork this project, submit issues, or open pull requests.
+## 🤝 Collaborators
 
-## License
+This project was developed with the help of:
 
-This project is licensed under the MIT License.
+- [Ruthwik](https://github.com/rtwk3) – Core Development, UI, SGPA Logic  
+- [Hemanth](https://github.com/Hemanth251005) – Theme Toggle, Input Validation
 
-## Acknowledgments
-- Thanks to Vignan University for providing inspiration for this project.
-- Thanks to FontAwesome for the icons used in the UI.
+> _Want to contribute? Fork this repo, push your code, and open a pull request._
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙏 Acknowledgments
+
+- Vignan University – for the academic structure and motivation.
+- FontAwesome – for beautiful UI icons.
+- MathJax – for rendering mathematical expressions in the browser.
